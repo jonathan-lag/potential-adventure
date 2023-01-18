@@ -1,5 +1,11 @@
 var button;
 let song;
+let x;
+let y;
+let xspeed;
+let yspeed;
+let dvd;
+let deg = 30;
 
 
 function preload() {
