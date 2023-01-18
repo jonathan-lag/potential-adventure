@@ -32,7 +32,7 @@ function draw() {
         x = 0;
     }
 
-    if (y + pic_logo.width >= height) {
+    if (y + pic_logo.height >= height) {
         yspeed = -yspeed;
         y = height - pic_logo.height;
     } else if (y <= 0) {
