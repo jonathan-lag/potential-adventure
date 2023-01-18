@@ -1,27 +1,41 @@
+var button;
+let song;
+
+
 function preload() {
-    pic_logo = loadImage("capybara.jpg");
+    pic_logo = loadImage("capybara-spin.gif");
+    
 }
 
 function setup() {
-    createCanvas(1000, 700);
+    pic_logo.resize(250,200);
+    song = loadSound('fbbilq.mp3');
+    createCanvas(screen.width, screen.height);
     x = width/2;
     y = height/2;
-    xspeed = 2;
-    yspeed = 2;
+    xspeed = 0.5;
+    yspeed = 0.5;
     frameRate(144);
+  
+    button = createButton("Don't Click :)");
+    button.mouseClicked(youFool);
+    button.size(width, height);
+    button.position(0, 0);
+    let col = color(50, 47, 51);
+    button.style('background-color', col);
 }
 
 function draw() {
-    background(0);
-
+    background(50, 47, 51);
+    image(pic_logo, x, y);
     x = x + xspeed;
     y = y + yspeed;
   
-    push();
-    translate(x, y);
-    rotate(frameCount / 144.0);
-    image(pic_logo, x, y);
-    pop();
+    //push();
+    //translate(x, y);
+    //rotate(frameCount / 144.0);
+    //image(pic_logo, x, y);
+    //pop();
 
     if (x + pic_logo.width >= width) {
         xspeed = -xspeed;
@@ -38,4 +52,17 @@ function draw() {
         yspeed = -yspeed;
         y = 0;
     }
+}
+
+//function mousePressed() {
+//  if (song.isPlaying()) {
+//    song.stop();
+//  } else {
+//    song.play();
+//  }
+//}
+
+function youFool() {  
+    button.remove();
+    song.play();
 }
