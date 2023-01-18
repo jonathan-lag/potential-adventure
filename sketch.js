@@ -1,13 +1,42 @@
+let x;
+let y;
+let xspeed;
+let yspeed;
+let dvd;
+let deg = 30;
+
+function preload() {
+    pic_logo = loadImage("capybara.jpg")
+}
+
 function setup() {
-    createCanvas(1000, 600);
-  }
-  
-  function draw() {
-    background(255);  
-    if (mouseIsPressed) {
-      fill(0);
-    } else {
-      fill(255);
+    createCanvas(500, 400);
+    x = width/2;
+    y = height/2;
+    xspeed = 2;
+    yspeed = 2;
+}
+
+function draw() {
+    background(0);
+    image(pic_logo, x, y);
+
+    x = x + xspeed;
+    y = y + yspeed;
+
+    if (x + pic_logo.width >= width) {
+        xspeed = -xspeed;
+        x = width - pic_logo.width;
+    } else if (x <= 0) {
+        xspeed = -xspeed;
+        x = 0;
     }
-    ellipse(mouseX, mouseY, 80, 80);
-  }
+
+    if (y + pic_logo.width >= height) {
+        yspeed = -yspeed;
+        y = height - pic_logo.height;
+    } else if (y <= 0) {
+        yspeed = -yspeed;
+        y = 0;
+    }
+}
