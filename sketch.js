@@ -18,11 +18,11 @@ function setup() {
     frameRate(144);
   
     button = createButton("Don't Click :)");
-    button.mouseClicked(youFool);
     button.size(width, height);
     button.position(0, 0);
     let col = color(50, 47, 51);
     button.style('background-color', col);
+    button.mouseClicked(youFool);
 }
 
 function draw() {
