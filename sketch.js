@@ -1,28 +1,27 @@
-let x;
-let y;
-let xspeed;
-let yspeed;
-let dvd;
-let deg = 30;
-
 function preload() {
-    pic_logo = loadImage("capybara.webp");
+    pic_logo = loadImage("capybara.jpg");
 }
 
 function setup() {
-    createCanvas(screen.width - 50, screen.height - 150);
+    createCanvas(1000, 700);
     x = width/2;
     y = height/2;
     xspeed = 2;
     yspeed = 2;
+    frameRate(60);
 }
 
 function draw() {
     background(0);
-    image(pic_logo, x, y);
 
     x = x + xspeed;
     y = y + yspeed;
+  
+    push();
+    translate(100, 100);
+    rotate(frameCount / 30.0);
+    image(pic_logo, x, y);
+    pop();
 
     if (x + pic_logo.width >= width) {
         xspeed = -xspeed;
