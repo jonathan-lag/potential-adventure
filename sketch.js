@@ -8,7 +8,7 @@ function setup() {
     y = height/2;
     xspeed = 2;
     yspeed = 2;
-    frameRate(60);
+    frameRate(144);
 }
 
 function draw() {
@@ -19,7 +19,7 @@ function draw() {
   
     push();
     translate(100, 100);
-    rotate(frameCount / 30.0);
+    rotate(frameCount / 144);
     image(pic_logo, x, y);
     pop();
 
