@@ -10,7 +10,7 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(750, 600);
+    createCanvas(screen.width, screen.height);
     x = width/2;
     y = height/2;
     xspeed = 2;
