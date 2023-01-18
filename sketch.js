@@ -18,8 +18,8 @@ function draw() {
     y = y + yspeed;
   
     push();
-    translate(100, 100);
-    rotate(frameCount / 144);
+    translate(x, y);
+    rotate(frameCount / 144.0);
     image(pic_logo, x, y);
     pop();
 
