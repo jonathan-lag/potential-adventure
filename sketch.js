@@ -6,7 +6,7 @@ let dvd;
 let deg = 30;
 
 function preload() {
-    pic_logo = loadImage("capybara.jpg");
+    pic_logo = loadImage("capybara.webp");
 }
 
 function setup() {
