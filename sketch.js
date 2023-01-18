@@ -3,6 +3,7 @@ function setup() {
   }
   
   function draw() {
+    fill(225);  
     if (mouseIsPressed) {
       fill(0);
     } else {
