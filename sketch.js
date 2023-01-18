@@ -10,12 +10,11 @@ let deg = 30;
 
 function preload() {
     pic_logo = loadImage("capybara-spin.gif");
-    
+    song = loadSound('fbbilq.mp3');
 }
 
 function setup() {
     pic_logo.resize(250,200);
-    song = loadSound('fbbilq.mp3');
     createCanvas(screen.width, screen.height);
     x = width/2;
     y = height/2;
