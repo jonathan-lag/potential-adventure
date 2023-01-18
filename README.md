@@ -1,3 +1,3 @@
 # potential-adventure
 
-p5.js demo
+This is a p5.js demo
