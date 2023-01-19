@@ -22,7 +22,7 @@ function setup() {
     yspeed = 0.5;
     frameRate(144);
   
-    button = createButton("Don't Click :)");
+    button = createButton("!!WARNING!! Do Not Click");
     button.size(width, height);
     button.position(8, 8);
     let col = color(50, 47, 51);
