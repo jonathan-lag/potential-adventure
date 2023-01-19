@@ -24,7 +24,7 @@ function setup() {
   
     button = createButton("Don't Click :)");
     button.size(width, height);
-    button.position(0, 0);
+    button.position(8, 8);
     let col = color(50, 47, 51);
     button.style('background-color', col);
     button.style('font-size', '150px');
