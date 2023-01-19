@@ -15,7 +15,7 @@ function preload() {
 
 function setup() {
     pic_logo.resize(250,200);
-    createCanvas(1000, 1000);
+    createCanvas(975, 1550);
     x = width/2;
     y = height/2;
     xspeed = 0.5;
@@ -27,6 +27,7 @@ function setup() {
     button.position(0, 0);
     let col = color(50, 47, 51);
     button.style('background-color', col);
+    button.style('font-size', '150px');
     button.mouseClicked(youFool);
 }
 
