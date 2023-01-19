@@ -18,8 +18,8 @@ function setup() {
     createCanvas(975, 1625);
     x = width/2;
     y = height/2;
-    xspeed = 0.5;
-    yspeed = 0.5;
+    xspeed = 0.75;
+    yspeed = 0.75;
     frameRate(144);
   
     button = createButton("WARNING: Do Not Click");
