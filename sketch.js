@@ -14,7 +14,7 @@ function preload() {
 }
 
 function setup() {
-    pic_logo.resize(250,200);
+    pic_logo.resize(350,350);
     createCanvas(975, 1550);
     x = width/2;
     y = height/2;
@@ -22,7 +22,7 @@ function setup() {
     yspeed = 0.5;
     frameRate(144);
   
-    button = createButton("!!WARNING!! Do Not Click");
+    button = createButton("WARNING: Do Not Click");
     button.size(width, height);
     button.position(8, 8);
     let col = color(50, 47, 51);
