@@ -15,11 +15,11 @@ function preload() {
 
 function setup() {
     pic_logo.resize(500,500);
-    createCanvas(975, 1625);
+    createCanvas(970, 1640);
     x = width/2;
     y = height/2;
-    xspeed = 0.75;
-    yspeed = 0.75;
+    xspeed = 1;
+    yspeed = 1;
     frameRate(144);
   
     button = createButton("WARNING: Do Not Click");
