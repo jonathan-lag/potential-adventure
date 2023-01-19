@@ -15,7 +15,7 @@ function preload() {
 
 function setup() {
     pic_logo.resize(350,350);
-    createCanvas(975, 1550);
+    createCanvas(950, 1650);
     x = width/2;
     y = height/2;
     xspeed = 0.5;
